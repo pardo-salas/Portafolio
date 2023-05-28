@@ -224,15 +224,21 @@ header .li .a{
     justify-content: center;
     align-items: center;
     margin:2em 0 0;
+
 }
 .seccion .ul .li{
     margin:0 1em;
 }
 .seccion .ul .a{
   text-transform: uppercase;
+  border-radius: 50%;
   font-weight: 600;
-  border-top: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid rgba(0, 0, 0,.2);
   padding: 2em 0 1em;
+  transform: all .5s ease;
+}
+.seccion .ul .a:hover{
+  border-color: black;
 }
 .seccion .h2{
   font-family: var(--tipo-principal);
