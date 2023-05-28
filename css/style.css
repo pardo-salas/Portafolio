@@ -223,6 +223,7 @@ header .li .a{
 .seccion .p{}
 .seccion .grid{
     width: 90%;
+    max-width: 40em;
     background: lightcoral;
     margin:1em 0;
     display: grid;
@@ -265,9 +266,29 @@ header .li .a{
 }
 
 .about{}
-.about h2{}
-.about p{}
-.about .rrss{}
-.about .li{}
+.about .h2{
+    margin: 0 0 1rem;
+}
+.about .p{
+    max-width: 40em;
+    background: orange;
+    margin: 0 0 1em;
+    text-align: left;
+}
+.about .rrss{
+    width:100% ;
+    background:green;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about .li{
+    margin:0 1em;
+}
 .about .a{}
-.about .svg{}
+.about .svg{
+    width: 3em;
+    height: 3em;
+    background:blue;
+}
