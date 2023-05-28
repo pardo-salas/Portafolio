@@ -200,16 +200,18 @@ header .li .a{
 .main{
     background: lightgrey;
     margin: 1em 0;
+    text-align: center;
 }
 .seccion{
     width: 100%;
     min-height:80vh;
     margin:1em 0;
     text-align: center;
-
-    display:felx;
+    background: lightblue;
+    padding: 2em;
+    display: flex;
     flex-flow: column wrap;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
 
 }
@@ -219,11 +221,48 @@ header .li .a{
 .seccion .h3{}
 
 .seccion .p{}
-.seccion .grid{}
-.seccion .article{}
+.seccion .grid{
+    width: 90%;
+    background: lightcoral;
+    margin:1em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+    gap:1em;
+}
+.seccion .article{
+    width: 100%;
+    min-height: 20vh;
+    background:lightgoldenrodyellow;
+
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .seccion .a{}
-.seccion .img{}
-.seccion .h4{}
+.seccion .figure{
+    width: 100%;
+    background: pink;
+}
+.seccion .img{
+    width: 100%;
+    background:lightpink;
+
+}
+.seccion .h4{
+    width: 100%;
+    height: 50%;
+    background: coral;
+    position: absolute;
+    bottom: 0;
+    left:0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .about{}
 .about h2{}
