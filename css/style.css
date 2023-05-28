@@ -13,7 +13,7 @@
 :root {
   --negro: #393939;
   /* Tipografía */
-  --tipo-principal: Assassin$, Arial, sans-serif;
+  --tipo-principal: 'Roboto Serif', serif;
   --tipo-secundaria: Verdana;
 }
 
@@ -147,7 +147,7 @@ body {
   font-family: var(--tipo-principal);
   color: var(--negro);
   /* opcional */
-  line-height: 1.4em;
+
   /* opcional */
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -170,6 +170,8 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+
+    display:none;
 }
 
 .header h1{
@@ -177,7 +179,6 @@ body {
 }
 
 .header .h1 a{
-
 }
 
 .header .nav{
@@ -205,7 +206,7 @@ header .li .a{
 .seccion{
     width: 100%;
     min-height:80vh;
-    margin:1em 0;
+   /*margin:1em 0;*/
     text-align: center;
     background: lightblue;
     padding: 2em;
@@ -217,8 +218,31 @@ header .li .a{
 }
 .seccion .circulos{}
 .seccion .circulo{}
-.seccion .h2{}
-.seccion .h3{}
+.seccion .ul{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin:2em 0 0;
+}
+.seccion .ul .li{
+    margin:0 1em;
+}
+.seccion .ul .a{
+  text-transform: uppercase;
+  font-weight: 600;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding: 2em 0 1em;
+}
+.seccion .h2{
+  font-family: var(--tipo-principal);
+  font-size:5em;
+}
+.seccion .h3{
+  font-family: var(--tipo-principal);
+  font-size: 3em;
+  font-style: italic;
+}
 
 .seccion .p{}
 .seccion .grid{
@@ -291,4 +315,12 @@ header .li .a{
     width: 3em;
     height: 3em;
     background:blue;
+}
+
+.footer{
+    padding: 2em 0;
+    text-align: center;
+}
+.footer .span{
+
 }
