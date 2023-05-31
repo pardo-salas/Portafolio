@@ -198,11 +198,13 @@ body {
 header .li .a{
 
 }
+
 .main{
     background: lightgrey;
-    margin: 1em 0;
+    margin:0 0 1em 0;
     text-align: center;
 }
+
 .seccion{
     width: 100%;
     min-height:80vh;
@@ -217,7 +219,9 @@ header .li .a{
 
 }
 .seccion .circulos{}
+
 .seccion .circulo{}
+
 .seccion .ul{
     display:flex;
     flex-flow: row wrap;
@@ -226,9 +230,11 @@ header .li .a{
     margin:2em 0 0;
 
 }
+
 .seccion .ul .li{
     margin:0 1em;
 }
+
 .seccion .ul .a{
   text-transform: uppercase;
   border-radius: 50%;
@@ -237,13 +243,16 @@ header .li .a{
   padding: 2em 0 1em;
   transform: all .5s ease;
 }
+
 .seccion .ul .a:hover{
   border-color: black;
 }
+
 .seccion .h2{
   font-family: var(--tipo-principal);
   font-size:5em;
 }
+
 .seccion .h3{
   font-family: var(--tipo-principal);
   font-size: 3em;
@@ -260,6 +269,7 @@ header .li .a{
     grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
     gap:1em;
 }
+
 .seccion .article{
     width: 100%;
     min-height: 20vh;
@@ -271,20 +281,23 @@ header .li .a{
     align-items: center;
     position: relative;
 }
+
 .seccion .a{}
 .seccion .figure{
     width: 100%;
     background: pink;
 }
+
 .seccion .img{
     width: 100%;
     background:lightpink;
 
 }
+
 .seccion .h4{
     width: 100%;
-    height: 50%;
-    background: coral;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.5);
     position: absolute;
     bottom: 0;
     left:0;
@@ -295,16 +308,23 @@ header .li .a{
     align-items: center;
 }
 
+.works .h2{
+  margin-bottom: 0 0 1rem;
+
+}
+
 .about{}
 .about .h2{
     margin: 0 0 1rem;
 }
+
 .about .p{
     max-width: 40em;
     background: orange;
     margin: 0 0 1em;
     text-align: left;
 }
+
 .about .rrss{
     width:100% ;
     background:green;
@@ -313,10 +333,13 @@ header .li .a{
     justify-content: center;
     align-items: center;
 }
+
 .about .li{
     margin:0 1em;
 }
+
 .about .a{}
+
 .about .svg{
     width: 3em;
     height: 3em;
@@ -327,6 +350,7 @@ header .li .a{
     padding: 2em 0;
     text-align: center;
 }
+
 .footer .span{
 
 }
