@@ -158,6 +158,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+  cursor:none;
 }
 
 .header{
@@ -260,10 +261,10 @@ header .li .a{
 }
 
 .seccion .p{}
+
 .seccion .grid{
     width: 90%;
     max-width: 40em;
-    background: lightcoral;
     margin:1em 0;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
@@ -280,6 +281,7 @@ header .li .a{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .seccion .a{}
@@ -297,15 +299,29 @@ header .li .a{
 .seccion .h4{
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255,.5);
+    background-color: rgba(0, 0, 0,.5);
+    backdrop-filter: blur(1rem);
     position: absolute;
     bottom: 0;
     left:0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: var(--tipo-principal);
+    font-style: italic;
+    transform: translateZ(1) scale(1.2);
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.seccion .article:hover .h4{
+  transform: translateZ(1) scale(1);
+  opacity: 1;
 }
 
 .works .h2{
@@ -319,15 +335,14 @@ header .li .a{
 }
 
 .about .p{
-    max-width: 40em;
-    background: orange;
-    margin: 0 0 1em;
+    max-width: 40rem;
+    margin: 0 0 2rem;
     text-align: left;
+    font-size: 1.5em;
 }
 
 .about .rrss{
     width:100% ;
-    background:green;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -341,9 +356,8 @@ header .li .a{
 .about .a{}
 
 .about .svg{
-    width: 3em;
-    height: 3em;
-    background:blue;
+    width: 2em;
+    height: 2em;
 }
 
 .footer{
